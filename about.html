@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sending notifications to mobile from terminal (using IFTTT)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light ftco-navbar-light-2" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">DWW Part 2 : Exploration - API</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	        	<li class="nav-item active"><a href="about.html" class="nav-link">How does it work ?</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/ifttt-banner.png');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">How does it work ?</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>How does it work ? <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Let's get started</span>
+            <h2>How to build and use our API ? </h2>
+          </div>
+        </div>
+        <div class="row no-gutters">
+        <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+          <img src="images/caption1.PNG" data-scrollax=" properties: { translateY: '-30%'}">
+          <div class="text">
+            <h2>First Step - Create an IFTTT account</h4>
+            <p>First, you have to create an account on the <a href="https://ifttt.com/discover">IFTTT website.</a> Register or create your account and click on "New Applet". Then, click on "+this" to select your trigger and search & select "Webhooks". Click on the "connect" button, then on"receive a web request".</p>
+
+          </div>
+        </div>
+        <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+          <img src="images/caption2.PNG" class="order-2" data-scrollax=" properties: { translateY: '-30%'}">
+          <div class="text order-1">
+            <h2>Second Step - Name the Event</h4>
+            <p>Name your event "Notify" and click on "Create Trigger". If you send the trigger, you need to sort of specify what happens after that.Click on "+that" to select the action to accomplish.</p>
+          </div>
+        </div>
+        <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+          <img src="images/caption3.PNG" data-scrollax=" properties: { translateY: '-30%'}">
+          <div class="text">
+            <h2>Third Step - Set up the "THAT" part</h4>
+            <p>IFTTT offers a lot of services: SMS, emails, phone calls, even publishing posts on Wordpress, Tumblr and so on. What we are looking for is "Notifications". What it does is that if you have a mobile phone and that you have the IFTTT app installed in it, you can set a notification that will pop up on your phone. </p>
+
+          </div>
+        </div>
+        <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+          <img src="images/caption4.PNG" class="order-2" data-scrollax=" properties: { translateY: '-30%'}">
+          <div class="text order-1">
+            <h2>Step Four - Choose action</h4>
+            <p>Select "Send Notification from the IFTTT App" then go to the next step</p>
+          </div>
+        </div>
+        <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+          <img src="images/caption5.PNG" data-scrollax=" properties: { translateY: '-30%'}">
+          <div class="text">
+            <h2>Step Five - Complete Action Fields</h4>
+            <p>You can replace the text; the notification that will pop up will show the text that is described under "Message". You can replace it by whatever you want. You can also pass values to these notifications by clicking on "Adding an Ingredient". You can add {{Value 1}}, {{Value 2}} as arguments. The notification will pop up the event name has occurred with the values 1 and 2. Values could be location, an IP Adress, it can be anything. <br>
+            Click on "Create Action" and then "Finish"</p>
+
+          </div>
+        </div>
+        <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+          <img src="images/caption6.PNG" class="order-2" data-scrollax=" properties: { translateY: '-30%'}">
+          <div class="text order-1">
+            <h2>Final Step - Trigger the Event</h4>
+            <p>Good job ! Now the applet is created. IFTTT Webhooks work with HTTP requests. In order to associate these requests with your account and your applets, IFTTT gives a unique key by account. Ypu need to have a look at the <a href="https://ifttt.com/maker_webhooks">Webhooks documentation</a> to access your key. <b>hello-ifttt</b> is the Event Name we set in Step 2. <b>value1, value2, value3</b> can take any value and will replace Value1, Value2 and Value3 from Step 5. <br>
+            You can send a POST or a GET statement, but to use the command line, you need to try it with "curl". Just open your terminal and past the code.Hit enter, and if everithing went fine, you should see "Congratulations ! You've fired the Notify event" and that should trigger a notification on your phone. </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> DWW - Paul Mangold using a template made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
